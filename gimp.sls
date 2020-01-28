@@ -9,7 +9,7 @@ gimp:
   '{{ version }}':
     full_name: 'GIMP {{ version }}'
     installer: 'https://download.gimp.org/mirror/pub/gimp/{{ major_version }}/windows/gimp-{{ version }}-setup{{ minor_version }}.exe'
-    install_flags: '/SP- /SILENT /NORESTART'
+    install_flags: '/SP- /SILENT /ALLUSERS /NORESTART'
     uninstaller: '%ProgramFiles%\Gimp 2\uninst\unins000.exe'
     uninstall_flags: '/SP- /SILENT /NORESTART'
     msiexec: False
