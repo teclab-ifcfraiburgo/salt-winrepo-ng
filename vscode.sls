@@ -5,7 +5,7 @@
 {% set PROGRAM_FILES = "%ProgramFiles%" %}
 
 vscode:
-  {% for version, guid in (('1.36.1', '2213894ea0415ee8c85c5eea0d0ff81ecc191529'), ('1.37.1', 'f06011ac164ae4dc8e753a3fe7f9549844d15e35'), ('1.38.1', 'b37e54c98e1a74ba89e03073e5a3761284e3ffb0'), ('1.39.1', '88f15d17dca836346e787762685a40bb5cce75a8'), ('1.39.2', '6ab598523be7a800d7f3eb4d92d7ab9a66069390')) %}
+  {% for version, guid in (('1.41.1', '26076a4de974ead31f97692a0d32f90d735645c0'), ('1.36.1', '2213894ea0415ee8c85c5eea0d0ff81ecc191529'), ('1.37.1', 'f06011ac164ae4dc8e753a3fe7f9549844d15e35'), ('1.38.1', 'b37e54c98e1a74ba89e03073e5a3761284e3ffb0'), ('1.39.1', '88f15d17dca836346e787762685a40bb5cce75a8'), ('1.39.2', '6ab598523be7a800d7f3eb4d92d7ab9a66069390')) %}
   '{{version}}':
     full_name: 'Microsoft Visual Studio Code'
     {% if grains['cpuarch'] == 'AMD64' %}
