@@ -1,0 +1,5 @@
+gitpython
+pycurl
+python-magic
+salt
+tabulate
